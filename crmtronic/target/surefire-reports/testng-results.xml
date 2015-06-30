@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Tests" duration-ms="6928" started-at="2015-06-30T12:27:42Z" finished-at="2015-06-30T12:27:49Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="6928" started-at="2015-06-30T12:27:42Z" finished-at="2015-06-30T12:27:49Z">
+      <class name="com.crmtronic.LoginTest">
+        <test-method status="PASS" signature="initTestSuite()[pri:0, instance:com.crmtronic.LoginTest@e580929]" name="initTestSuite" is-config="true" duration-ms="26" started-at="2015-06-30T15:27:40Z" finished-at="2015-06-30T15:27:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTestSuite -->
+        <test-method status="PASS" signature="initWebDriver()[pri:0, instance:com.crmtronic.LoginTest@e580929]" name="initWebDriver" is-config="true" duration-ms="2127" started-at="2015-06-30T15:27:40Z" finished-at="2015-06-30T15:27:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initWebDriver -->
+        <test-method status="PASS" signature="initPageObjects()[pri:0, instance:com.crmtronic.LoginTest@e580929]" name="initPageObjects" is-config="true" duration-ms="6379" started-at="2015-06-30T15:27:42Z" finished-at="2015-06-30T15:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjects -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.crmtronic.LoginTest@e580929]" name="testLogin" duration-ms="540" started-at="2015-06-30T15:27:49Z" finished-at="2015-06-30T15:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crmtronic.LoginTest@e580929]" name="tearDown" is-config="true" duration-ms="1478" started-at="2015-06-30T15:27:49Z" finished-at="2015-06-30T15:27:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crmtronic.LoginTest -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Tests -->
+</testng-results>
