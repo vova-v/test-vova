@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +101,12 @@
                     <div class="method-list-content passed suite-Tests">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="com.crmtronic.LoginTest" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="com.crmtronic.LoginTest" hash-for-method="testGoPagePasswordRecovery">testGoPagePasswordRecovery</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="com.crmtronic.LoginTest" hash-for-method="testLoginIn">testLoginIn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Tests -->
@@ -124,9 +129,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLogin">
-                  </a> <!-- testLogin -->
-                  <span class="method-name">testLogin</span>
+                  <a name="testGoPagePasswordRecovery">
+                  </a> <!-- testGoPagePasswordRecovery -->
+                  <span class="method-name">testGoPagePasswordRecovery</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginIn">
+                  </a> <!-- testLoginIn -->
+                  <span class="method-name">testLoginIn</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -183,16 +195,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testLogin')
+data.setCell(0, 1, 'testLoginIn')
 data.setCell(0, 2, 'com.crmtronic.LoginTest')
-data.setCell(0, 3, 540);
+data.setCell(0, 3, 461);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testGoPagePasswordRecovery')
+data.setCell(1, 2, 'com.crmtronic.LoginTest')
+data.setCell(1, 3, 246);
 window.suiteTableData['Tests']= { tableData: data, tableDiv: 'times-div-Tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 540 ms</span>
+              <span class="suite-total-time">Total running time: 707 ms</span>
               <div id="times-div-Tests">
               </div> <!-- times-div-Tests -->
             </div> <!-- times-div -->
@@ -225,19 +241,27 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">initWebDriver</span>
-                <span class="method-start">26 ms</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">initPageObjects</span>
-                <span class="method-start">2161 ms</span>
+                <span class="method-start">8585 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testLogin</span>
-                <span class="method-start">8540 ms</span>
+                <span class="method-name">testGoPagePasswordRecovery</span>
+                <span class="method-start">21431 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPageObjects</span>
+                <span class="method-start">21678 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginIn</span>
+                <span class="method-start">24431 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9123 ms</span>
+                <span class="method-start">24929 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

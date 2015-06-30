@@ -21,8 +21,13 @@ public class LoginTest extends TestNgTestBase {
   }
 
   @Test
-  public void testLogin() throws InterruptedException {
-	  loginPage.verifiLoginPage();
+  public void testLoginIn() throws InterruptedException {
+	  loginPage.verifiLoginIn();
+  }
+  
+  @Test
+  public void testGoPagePasswordRecovery() throws InterruptedException {
+	  loginPage.verifiGoPagePasswordRecovery();
   }
   
 }
