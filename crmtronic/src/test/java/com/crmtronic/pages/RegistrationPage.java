@@ -1,20 +1,22 @@
 package com.crmtronic.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 public class RegistrationPage extends PasswordRecoveryPage{
-	Account account = new Account();
+	public Account account = new Account();
 
 	public RegistrationPage(WebDriver driver) {
 		super(driver);
 	}
 	
-	@FindBy(xpath = "//input[@placeholder = 'Email']")
+	@FindBy(xpath = "//input[@type = 'email']")
 	private WebElement fieldEmail;
 	
 	@FindBy(xpath = "//input[@placeholder = 'Пароль']")
@@ -32,11 +34,16 @@ public class RegistrationPage extends PasswordRecoveryPage{
 	@FindBy(id = "businessCategory")
 	private WebElement fieldBusinessCategory;
 	
+	@FindBy(xpath = "//span[contains(text(), 'Регистрация')]")
+	private WebElement buttonSubmit;
+	
 	public void typeFieldEmail(){
 		wait.until(ExpectedConditions
 				.visibilityOf(fieldEmail)).clear();
+		System.out.println("4"+account.getEmail());
 		wait.until(ExpectedConditions
-				.visibilityOf(fieldEmail)).sendKeys(account.getEmail());
+				.visibilityOf(fieldEmail))
+					.sendKeys(account.getEmail());
 		
 	}
 	
@@ -64,7 +71,7 @@ public class RegistrationPage extends PasswordRecoveryPage{
 		
 	}
 	
-	public void typeSelectCfgCategory(){
+	public void selectCfgCategory(){
 		Select select = new Select(selectCfgCategory);
 		select.selectByVisibleText(account.getCfgCategory());
 		
@@ -79,6 +86,36 @@ public class RegistrationPage extends PasswordRecoveryPage{
 				.visibilityOf(fieldBusinessCategory))
 				.sendKeys(account.getBusinessCategory());
 		
+	}
+	
+	public RegistrationPage clickButtonSingUp(){
+		wait.until(ExpectedConditions
+				.visibilityOf(buttonSubmit)).click();
+		return this;
+	}
+	
+	public String getMessageSuccessfulRegistration(){
+		return wait.until(ExpectedConditions.presenceOfElementLocated(By
+				.xpath("//div[@class = 'alert alert-danger']"))).getText();
+	}
+	
+	public LoginPage clickLinkOpenPageLogin(){
+		wait.until(ExpectedConditions.presenceOfElementLocated(By
+				.xpath("//a[contains(text(), 'этой')]"))).click();
+		return PageFactory.initElements(driver, LoginPage.class);
+	}
+
+	public RegistrationPage registerIn() throws InterruptedException {
+		System.out.println("3"+account.getEmail());
+		Thread.sleep(1000);
+		typeFieldEmail();
+		typeFieldPassword();
+		typeFieldPhone();
+		typeFieldSubdomain();
+		selectCfgCategory();
+		typeFieldBusinessCategory();
+		clickButtonSingUp();
+		return this;
 	}
 	
 	

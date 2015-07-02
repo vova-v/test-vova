@@ -8,17 +8,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import com.crmtronic.pages.Page;
 
+public class DashboardPage extends LoginPage {
 
-/**
- * Sample page
- */
-public class HomePage extends Page {
-
-  @FindBy(how = How.TAG_NAME, using = "h1")
-  @CacheLookup
-  public WebElement header;
-
-  public HomePage(WebDriver webDriver) {
+  public DashboardPage(WebDriver webDriver) {
     super(webDriver);
   }
+  
+  
 }

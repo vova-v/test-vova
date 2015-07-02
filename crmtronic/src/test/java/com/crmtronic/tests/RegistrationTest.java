@@ -1,0 +1,36 @@
+package com.crmtronic.tests;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.crmtronic.pages.LoginPage;
+import com.crmtronic.pages.RegistrationPage;
+import com.crmtronic.testbase.TestNgTestBase;
+
+public class RegistrationTest extends TestNgTestBase{
+
+	
+		@BeforeMethod
+		public void setUp() throws InterruptedException{
+			registrationPage.account.setEmail(dropMailPage.generedNewEmail());
+			loginPage.clickLingForgotPassword()
+						.clickLingSingUp();
+			System.out.println("1"+registrationPage.account.getEmail());
+		}
+	
+		@Test()
+		public void testRegistrationOkWithCategoryTour() throws InterruptedException {
+			System.out.println("2"+registrationPage.account.getEmail());
+			RegistrationPage register = registrationPage.registerIn();
+			System.out.println(register.getMessageSuccessfulRegistration());
+			Assert.assertTrue(register.getMessageSuccessfulRegistration()
+					.contains("Спасибо! Аккаунт создан."));
+			LoginPage login = register.clickLinkOpenPageLogin().verifiLoginIn(registrationPage.account.getEmail(), registrationPage.account.getPassword());
+			Assert.assertTrue(login.getNamePage().equals("Панель управления"));
+		}
+
+}

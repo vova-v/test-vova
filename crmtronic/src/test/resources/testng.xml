@@ -3,7 +3,7 @@
 <suite name="Tests" verbose="5">
   <test name="Test1">
     <classes>
-      <class name="com.crmtronic.LoginTest"/>
+      <class name="com.crmtronic.tests.LoginTest"/>
     </classes>
   </test>  
 </suite>

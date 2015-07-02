@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Tests" duration-ms="16340" started-at="2015-06-30T15:53:58Z" finished-at="2015-06-30T15:54:15Z">
+  <suite name="Tests" duration-ms="19008" started-at="2015-07-01T10:47:42Z" finished-at="2015-07-01T10:48:01Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="16340" started-at="2015-06-30T15:53:58Z" finished-at="2015-06-30T15:54:15Z">
-      <class name="com.crmtronic.LoginTest">
-        <test-method status="PASS" signature="initTestSuite()[pri:0, instance:com.crmtronic.LoginTest@e580929]" name="initTestSuite" is-config="true" duration-ms="30" started-at="2015-06-30T18:53:50Z" finished-at="2015-06-30T18:53:50Z">
+    <test name="Test1" duration-ms="19008" started-at="2015-07-01T10:47:42Z" finished-at="2015-07-01T10:48:01Z">
+      <class name="com.crmtronic.tests.LoginTest">
+        <test-method status="PASS" signature="initTestSuite()[pri:0, instance:com.crmtronic.tests.LoginTest@e580929]" name="initTestSuite" is-config="true" duration-ms="26" started-at="2015-07-01T13:47:37Z" finished-at="2015-07-01T13:47:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTestSuite -->
-        <test-method status="PASS" signature="initWebDriver()[pri:0, instance:com.crmtronic.LoginTest@e580929]" name="initWebDriver" is-config="true" duration-ms="8523" started-at="2015-06-30T18:53:50Z" finished-at="2015-06-30T18:53:58Z">
+        <test-method status="PASS" signature="initWebDriver()[pri:0, instance:com.crmtronic.tests.LoginTest@e580929]" name="initWebDriver" is-config="true" duration-ms="4889" started-at="2015-07-01T13:47:37Z" finished-at="2015-07-01T13:47:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initWebDriver -->
-        <test-method status="PASS" signature="initPageObjects()[pri:0, instance:com.crmtronic.LoginTest@e580929]" name="initPageObjects" is-config="true" duration-ms="12846" started-at="2015-06-30T18:53:58Z" finished-at="2015-06-30T18:54:11Z">
+        <test-method status="PASS" signature="initPageObjects()[pri:0, instance:com.crmtronic.tests.LoginTest@e580929]" name="initPageObjects" is-config="true" duration-ms="15496" started-at="2015-07-01T13:47:42Z" finished-at="2015-07-01T13:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPageObjects -->
-        <test-method status="PASS" signature="testGoPagePasswordRecovery()[pri:0, instance:com.crmtronic.LoginTest@e580929]" name="testGoPagePasswordRecovery" duration-ms="246" started-at="2015-06-30T18:54:11Z" finished-at="2015-06-30T18:54:11Z">
+        <test-method status="PASS" signature="testGoPagePasswordRecovery()[pri:0, instance:com.crmtronic.tests.LoginTest@e580929]" name="testGoPagePasswordRecovery" duration-ms="176" started-at="2015-07-01T13:47:58Z" finished-at="2015-07-01T13:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGoPagePasswordRecovery -->
-        <test-method status="PASS" signature="initPageObjects()[pri:0, instance:com.crmtronic.LoginTest@e580929]" name="initPageObjects" is-config="true" duration-ms="2753" started-at="2015-06-30T18:54:11Z" finished-at="2015-06-30T18:54:14Z">
+        <test-method status="PASS" signature="initPageObjects()[pri:0, instance:com.crmtronic.tests.LoginTest@e580929]" name="initPageObjects" is-config="true" duration-ms="1764" started-at="2015-07-01T13:47:58Z" finished-at="2015-07-01T13:48:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPageObjects -->
-        <test-method status="PASS" signature="testLoginIn()[pri:0, instance:com.crmtronic.LoginTest@e580929]" name="testLoginIn" duration-ms="461" started-at="2015-06-30T18:54:14Z" finished-at="2015-06-30T18:54:15Z">
+        <test-method status="PASS" signature="testLoginIn()[pri:0, instance:com.crmtronic.tests.LoginTest@e580929]" name="testLoginIn" duration-ms="1564" started-at="2015-07-01T13:48:00Z" finished-at="2015-07-01T13:48:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginIn -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crmtronic.LoginTest@e580929]" name="tearDown" is-config="true" duration-ms="1613" started-at="2015-06-30T18:54:15Z" finished-at="2015-06-30T18:54:16Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crmtronic.tests.LoginTest@e580929]" name="tearDown" is-config="true" duration-ms="7443" started-at="2015-07-01T13:48:02Z" finished-at="2015-07-01T13:48:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crmtronic.LoginTest -->
+      </class> <!-- com.crmtronic.tests.LoginTest -->
     </test> <!-- Test1 -->
   </suite> <!-- Tests -->
 </testng-results>

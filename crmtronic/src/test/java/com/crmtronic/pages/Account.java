@@ -1,13 +1,15 @@
 package com.crmtronic.pages;
 
+import java.util.Random;
+
 public class Account {
 	
 	private String email;
-	private String password;
-	private String phone;
-	private String subdomain;
-	private String cfgCategory;
-	private String businessCategory;
+	private String password = "1234567890a";
+	private String phone = "+380631693114";
+	private String subdomain = "avtotest" + new Random().nextInt(1000000);
+	private String cfgCategory = "Стандартный";
+	private String businessCategory = "Авто тест";
 
 	public String getEmail() {
 		return email;
