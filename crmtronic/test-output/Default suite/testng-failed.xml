@@ -3,16 +3,18 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.crmtronic.tests.RegistrationTest">
+      <class name="com.crmtronic.tests.CategoriesTest">
         <methods>
+          <include name="testCreateNewCategories"/>
           <include name="initTestSuite"/>
-          <include name="setUp"/>
+          <include name="endMethod"/>
           <include name="initPageObjects"/>
-          <include name="testRegistrationOkWithCategoryTour"/>
+          <include name="startMethod"/>
           <include name="tearDown"/>
           <include name="initWebDriver"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.crmtronic.tests.RegistrationTest -->
+      </class> <!-- com.crmtronic.tests.CategoriesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

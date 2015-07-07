@@ -17,19 +17,19 @@ public class RegistrationTest extends TestNgTestBase{
 		@BeforeMethod
 		public void setUp() throws InterruptedException{
 			registrationPage.account.setEmail(dropMailPage.generedNewEmail());
+			Thread.sleep(1000);
 			loginPage.clickLingForgotPassword()
 						.clickLingSingUp();
-			System.out.println("1"+registrationPage.account.getEmail());
 		}
 	
 		@Test()
 		public void testRegistrationOkWithCategoryTour() throws InterruptedException {
-			System.out.println("2"+registrationPage.account.getEmail());
 			RegistrationPage register = registrationPage.registerIn();
-			System.out.println(register.getMessageSuccessfulRegistration());
 			Assert.assertTrue(register.getMessageSuccessfulRegistration()
 					.contains("Спасибо! Аккаунт создан."));
-			LoginPage login = register.clickLinkOpenPageLogin().verifiLoginIn(registrationPage.account.getEmail(), registrationPage.account.getPassword());
+			LoginPage login = register.clickLinkOpenPageLogin()
+					.verifiLoginIn(registrationPage.account.getEmail()
+							, registrationPage.account.getPassword());
 			Assert.assertTrue(login.getNamePage().equals("Панель управления"));
 		}
 

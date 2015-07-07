@@ -3,8 +3,10 @@ package com.crmtronic.pages;
 import org.apache.xml.dtm.ref.ExpandedNameTable;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 
 public class NavigateMenu extends LoginPage{
 
@@ -21,6 +23,17 @@ public class NavigateMenu extends LoginPage{
 	@FindBy(xpath = "//span[contains(text(), '—делки')]/..")
 	private WebElement menuDealings;
 	
+	@FindBy(xpath = "//*[@id='user-header']/a/span")
+	public WebElement menuUserName;
+	
+	@FindBy(xpath = "//a[@href = '/sign-out']")
+	private WebElement menuSingOut;
+	
+	@FindBy(xpath = "//span[contains(text(), '—хема продаж')]/..")
+	private WebElement menuCategories;
+	
+	
+	
 	public NavigateMenu clickMenuSettings(){
 		wait.until(ExpectedConditions
 				.visibilityOf(menuSettings)).click();
@@ -32,9 +45,23 @@ public class NavigateMenu extends LoginPage{
 				.visibilityOf(menuProfile)).click();
 	}
 	
+	public void clickMenuCategories(){
+		wait.until(ExpectedConditions
+				.visibilityOf(menuCategories)).click();
+	}
+	
 	public void clickMenuDealings(){
 		wait.until(ExpectedConditions
 				.visibilityOf(menuDealings)).click();
 	}
+	
+	public void logout() throws InterruptedException{
+		Actions action = new Actions(driver);
+		action.moveToElement(wait.until(ExpectedConditions
+				.visibilityOf(menuUserName))).click().perform();
+		action.moveToElement(wait.until(ExpectedConditions
+				.visibilityOf(menuSingOut))).click().perform();
+	}
+
 
 }

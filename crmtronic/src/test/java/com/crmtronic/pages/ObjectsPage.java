@@ -1,8 +1,6 @@
-package com.crmtronic.tests;
+package com.crmtronic.pages;
 
 import org.openqa.selenium.WebDriver;
-
-import com.crmtronic.pages.NavigateMenu;
 
 public class ObjectsPage extends NavigateMenu{
 

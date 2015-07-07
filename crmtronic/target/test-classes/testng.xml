@@ -4,6 +4,20 @@
   <test name="Test1">
     <classes>
       <class name="com.crmtronic.tests.LoginTest"/>
+      	<methods>
+          <include name="testLogin"/>
+          <include name="testGoStore"/>
+        </methods>
     </classes>
   </test>  
+  <test name="Test2">
+    <classes>
+      <class name="com.crmtronic.tests.RegistrationTest"/>
+    </classes>
+  </test> 
+  <test name="Test3">
+    <classes>
+      <class name="com.crmtronic.tests.CategoriesTest"/>
+    </classes>
+  </test> 
 </suite>

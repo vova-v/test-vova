@@ -1,37 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18979" started-at="2015-07-02T11:56:50Z" finished-at="2015-07-02T11:57:09Z">
+  <suite name="Tests" duration-ms="59952" started-at="2015-07-07T06:56:57Z" finished-at="2015-07-07T06:57:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18979" started-at="2015-07-02T11:56:50Z" finished-at="2015-07-02T11:57:09Z">
-      <class name="com.crmtronic.tests.RegistrationTest">
-        <test-method status="PASS" signature="initTestSuite()[pri:0, instance:com.crmtronic.tests.RegistrationTest@4563e9ab]" name="initTestSuite" is-config="true" duration-ms="39" started-at="2015-07-02T14:56:48Z" finished-at="2015-07-02T14:56:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initTestSuite -->
-        <test-method status="PASS" signature="initWebDriver()[pri:0, instance:com.crmtronic.tests.RegistrationTest@4563e9ab]" name="initWebDriver" is-config="true" duration-ms="1568" started-at="2015-07-02T14:56:48Z" finished-at="2015-07-02T14:56:50Z">
+    <test name="Test1" duration-ms="20596" started-at="2015-07-07T06:56:57Z" finished-at="2015-07-07T06:57:18Z">
+      <class name="com.crmtronic.tests.LoginTest">
+        <test-method status="PASS" signature="initWebDriver()[pri:0, instance:com.crmtronic.tests.LoginTest@5ba23b66]" name="initWebDriver" is-config="true" duration-ms="2009" started-at="2015-07-07T09:56:57Z" finished-at="2015-07-07T09:56:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initWebDriver -->
-        <test-method status="PASS" signature="initPageObjects()[pri:0, instance:com.crmtronic.tests.RegistrationTest@4563e9ab]" name="initPageObjects" is-config="true" duration-ms="6557" started-at="2015-07-02T14:56:50Z" finished-at="2015-07-02T14:56:56Z">
+        <test-method status="PASS" signature="initPageObjects()[pri:0, instance:com.crmtronic.tests.LoginTest@5ba23b66]" name="initPageObjects" is-config="true" duration-ms="2047" started-at="2015-07-07T09:56:59Z" finished-at="2015-07-07T09:57:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPageObjects -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crmtronic.tests.RegistrationTest@4563e9ab]" name="setUp" is-config="true" duration-ms="1563" started-at="2015-07-02T14:56:56Z" finished-at="2015-07-02T14:56:58Z">
+        <test-method status="PASS" signature="startMethod()[pri:0, instance:com.crmtronic.tests.LoginTest@5ba23b66]" name="startMethod" is-config="true" duration-ms="4444" started-at="2015-07-07T09:57:01Z" finished-at="2015-07-07T09:57:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMethod -->
+        <test-method status="PASS" signature="testGoPagePasswordRecovery()[pri:0, instance:com.crmtronic.tests.LoginTest@5ba23b66]" name="testGoPagePasswordRecovery" duration-ms="843" started-at="2015-07-07T09:57:06Z" finished-at="2015-07-07T09:57:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoPagePasswordRecovery -->
+        <test-method status="PASS" signature="endMethod()[pri:0, instance:com.crmtronic.tests.LoginTest@5ba23b66]" name="endMethod" is-config="true" duration-ms="2028" started-at="2015-07-07T09:57:07Z" finished-at="2015-07-07T09:57:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endMethod -->
+        <test-method status="PASS" signature="initPageObjects()[pri:0, instance:com.crmtronic.tests.LoginTest@5ba23b66]" name="initPageObjects" is-config="true" duration-ms="760" started-at="2015-07-07T09:57:09Z" finished-at="2015-07-07T09:57:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjects -->
+        <test-method status="PASS" signature="startMethod()[pri:0, instance:com.crmtronic.tests.LoginTest@5ba23b66]" name="startMethod" is-config="true" duration-ms="1927" started-at="2015-07-07T09:57:09Z" finished-at="2015-07-07T09:57:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMethod -->
+        <test-method status="PASS" signature="testLoginOK()[pri:0, instance:com.crmtronic.tests.LoginTest@5ba23b66]" name="testLoginOK" duration-ms="1467" started-at="2015-07-07T09:57:11Z" finished-at="2015-07-07T09:57:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginOK -->
+        <test-method status="PASS" signature="endMethod()[pri:0, instance:com.crmtronic.tests.LoginTest@5ba23b66]" name="endMethod" is-config="true" duration-ms="5046" started-at="2015-07-07T09:57:13Z" finished-at="2015-07-07T09:57:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endMethod -->
+      </class> <!-- com.crmtronic.tests.LoginTest -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="21237" started-at="2015-07-07T06:57:18Z" finished-at="2015-07-07T06:57:39Z">
+      <class name="com.crmtronic.tests.RegistrationTest">
+        <test-method status="PASS" signature="initWebDriver()[pri:0, instance:com.crmtronic.tests.RegistrationTest@880ec60]" name="initWebDriver" is-config="true" duration-ms="72" started-at="2015-07-07T09:57:18Z" finished-at="2015-07-07T09:57:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initWebDriver -->
+        <test-method status="PASS" signature="initPageObjects()[pri:0, instance:com.crmtronic.tests.RegistrationTest@880ec60]" name="initPageObjects" is-config="true" duration-ms="656" started-at="2015-07-07T09:57:18Z" finished-at="2015-07-07T09:57:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjects -->
+        <test-method status="PASS" signature="startMethod()[pri:0, instance:com.crmtronic.tests.RegistrationTest@880ec60]" name="startMethod" is-config="true" duration-ms="1832" started-at="2015-07-07T09:57:19Z" finished-at="2015-07-07T09:57:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crmtronic.tests.RegistrationTest@880ec60]" name="setUp" is-config="true" duration-ms="2957" started-at="2015-07-07T09:57:21Z" finished-at="2015-07-07T09:57:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testRegistrationOkWithCategoryTour()[pri:0, instance:com.crmtronic.tests.RegistrationTest@4563e9ab]" name="testRegistrationOkWithCategoryTour" duration-ms="10847" started-at="2015-07-02T14:56:58Z" finished-at="2015-07-02T14:57:09Z">
+        <test-method status="PASS" signature="testRegistrationOkWithCategoryTour()[pri:0, instance:com.crmtronic.tests.RegistrationTest@880ec60]" name="testRegistrationOkWithCategoryTour" duration-ms="10912" started-at="2015-07-07T09:57:24Z" finished-at="2015-07-07T09:57:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegistrationOkWithCategoryTour -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crmtronic.tests.RegistrationTest@4563e9ab]" name="tearDown" is-config="true" duration-ms="1680" started-at="2015-07-02T14:57:09Z" finished-at="2015-07-02T14:57:10Z">
+        <test-method status="PASS" signature="endMethod()[pri:0, instance:com.crmtronic.tests.RegistrationTest@880ec60]" name="endMethod" is-config="true" duration-ms="4805" started-at="2015-07-07T09:57:35Z" finished-at="2015-07-07T09:57:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endMethod -->
+      </class> <!-- com.crmtronic.tests.RegistrationTest -->
+    </test> <!-- Test2 -->
+    <test name="Test3" duration-ms="17761" started-at="2015-07-07T06:57:39Z" finished-at="2015-07-07T06:57:57Z">
+      <class name="com.crmtronic.tests.CategoriesTest">
+        <test-method status="PASS" signature="initTestSuite()[pri:0, instance:com.crmtronic.tests.CategoriesTest@5b464ce8]" name="initTestSuite" is-config="true" duration-ms="25" started-at="2015-07-07T09:56:57Z" finished-at="2015-07-07T09:56:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTestSuite -->
+        <test-method status="PASS" signature="initWebDriver()[pri:0, instance:com.crmtronic.tests.CategoriesTest@5b464ce8]" name="initWebDriver" is-config="true" duration-ms="11" started-at="2015-07-07T09:57:39Z" finished-at="2015-07-07T09:57:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initWebDriver -->
+        <test-method status="PASS" signature="initPageObjects()[pri:0, instance:com.crmtronic.tests.CategoriesTest@5b464ce8]" name="initPageObjects" is-config="true" duration-ms="638" started-at="2015-07-07T09:57:39Z" finished-at="2015-07-07T09:57:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjects -->
+        <test-method status="PASS" signature="startMethod()[pri:0, instance:com.crmtronic.tests.CategoriesTest@5b464ce8]" name="startMethod" is-config="true" duration-ms="1962" started-at="2015-07-07T09:57:40Z" finished-at="2015-07-07T09:57:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crmtronic.tests.CategoriesTest@5b464ce8]" name="setUp" is-config="true" duration-ms="3327" started-at="2015-07-07T09:57:42Z" finished-at="2015-07-07T09:57:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCreateNewCategories()[pri:0, instance:com.crmtronic.tests.CategoriesTest@5b464ce8]" name="testCreateNewCategories" duration-ms="5976" started-at="2015-07-07T09:57:45Z" finished-at="2015-07-07T09:57:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateNewCategories -->
+        <test-method status="PASS" signature="endMethod()[pri:0, instance:com.crmtronic.tests.CategoriesTest@5b464ce8]" name="endMethod" is-config="true" duration-ms="5841" started-at="2015-07-07T09:57:51Z" finished-at="2015-07-07T09:57:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crmtronic.tests.CategoriesTest@5b464ce8]" name="tearDown" is-config="true" duration-ms="7393" started-at="2015-07-07T09:57:57Z" finished-at="2015-07-07T09:58:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crmtronic.tests.RegistrationTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.crmtronic.tests.CategoriesTest -->
+    </test> <!-- Test3 -->
+  </suite> <!-- Tests -->
 </testng-results>

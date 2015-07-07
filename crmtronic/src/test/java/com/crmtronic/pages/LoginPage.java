@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage extends Page{
 	
-	Customer customer = new Customer();
+Customer customer = new Customer();
 	
 	public WebDriverWait wait = new WebDriverWait(driver, 30);
 
