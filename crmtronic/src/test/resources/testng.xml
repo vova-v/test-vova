@@ -18,6 +18,12 @@
   <test name="Test3">
     <classes>
       <class name="com.crmtronic.tests.CategoriesTest"/>
+      	<methods>
+          <include name="testCreateNewCategories"/>
+          <include name="testVerifiFieldSearchCategories"/>
+          <include name="testVerifiButtonVisibitiClose"/>
+          <include name="testVerifiDocumentCategory"/>
+        </methods>
     </classes>
   </test> 
 </suite>

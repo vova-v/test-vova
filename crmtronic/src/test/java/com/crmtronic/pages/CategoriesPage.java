@@ -109,7 +109,16 @@ public class CategoriesPage extends NavigateMenu{
 	}
 
 
+	public EditCategoriesPage clickButtonEditCategory(){
+		categories.setName(workWithMongo.getSimplifiedCategory().toString());
+		wait.until(ExpectedConditions.presenceOfElementLocated(By
+				.xpath("//a[@class = 'bo-name'][@href = '/objects"
+						+ "/by-category/"+categories.getName()+"']"
+								+ "/../span/button[@class = 'js-category-edit close']")))
+					.click();
 	
+		return PageFactory.initElements(driver, EditCategoriesPage.class);
+	}
 	
 
 }

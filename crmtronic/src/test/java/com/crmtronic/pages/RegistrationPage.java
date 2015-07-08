@@ -106,7 +106,6 @@ public class RegistrationPage extends PasswordRecoveryPage{
 	}
 
 	public RegistrationPage registerIn() throws InterruptedException {
-		System.out.println("3"+account.getEmail());
 		Thread.sleep(1000);
 		typeFieldEmail();
 		typeFieldPassword();

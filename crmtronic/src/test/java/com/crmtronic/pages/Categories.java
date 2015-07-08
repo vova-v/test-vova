@@ -10,6 +10,7 @@ public class Categories {
 	private String preloadedCategories = new WorkWithMongo().getCategoryName().toString();
 	private String documentLocation = "C:\\Users\\Vova\\Desktop\\";
 	private String documentName = "тест тегов.docx";
+	private String nameGroupStatus = "AvtoTestGroup" + new Random().nextInt(1000000);
 	
 	public String getPreloadedCategories() {
 		return preloadedCategories;
@@ -41,6 +42,14 @@ public class Categories {
 
 	public void setDocumentName(String documentName) {
 		this.documentName = documentName;
+	}
+
+	public String getNameGroupStatus() {
+		return nameGroupStatus;
+	}
+
+	public void setNameGroupStatus(String nameGroupStatus) {
+		this.nameGroupStatus = nameGroupStatus;
 	}
 
 }

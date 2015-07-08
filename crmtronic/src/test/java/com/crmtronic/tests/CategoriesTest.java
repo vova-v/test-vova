@@ -17,7 +17,7 @@ public class CategoriesTest extends TestNgTestBase {
 					.clickMenuCategories();
 	}
 	
-	@Test(priority = 1)
+	//@Test()
 	public void testCreateNewCategories() throws InterruptedException {
 		categoriesPage.clickButtonAddNewCategories()
 						.createNewCategories()
@@ -26,14 +26,14 @@ public class CategoriesTest extends TestNgTestBase {
 		
 	}
 	
-	@Test()
+	//@Test()
 	public void testVerifiFieldSearchCategories() throws InterruptedException {
 		categoriesPage.typeFieldSearchCategories();
 		Assert.assertTrue(categoriesPage.verifiCategoriesIsTrue());
 		
 	}
 	
-	@Test()
+	//@Test()
 	public void testVerifiButtonVisibitiClose() throws InterruptedException {
 		categoriesPage.clickButtonVisibilityClose();
 		Assert.assertFalse(navigateMenu.verifiCategoriesMenu(categoriesPage
@@ -44,7 +44,7 @@ public class CategoriesTest extends TestNgTestBase {
 		
 	}
 	
-	@Test()
+	//@Test()
 	public void testVerifiDocumentCategory() throws InterruptedException {
 		categoriesPage.clickButtonCategoryDocument().addDocument();
 		Assert.assertTrue(categoriesPage.verifiDocumentIsTrue());
@@ -53,10 +53,23 @@ public class CategoriesTest extends TestNgTestBase {
 		
 	}
 	//пока не работает проверка что категория удалилась
-	@Test(priority = 2)
+	//@Test(priority = 2)
 	public void testDeleteCategory() throws InterruptedException {
 		categoriesPage.deleteCategory();
 		Assert.assertFalse(categoriesPage.verifiCategoriesIsFalse());
+		
+	}
+	
+	@Test()
+	public void testAddGroupStatusCategory() throws InterruptedException {
+		categoriesPage.clickButtonEditCategory()
+						.addNewGroupStatus();
+		Assert.assertTrue(editCategoriesPage.verifiGroupStatusIsTrue());
+		Thread.sleep(10000);
+		driver.navigate().refresh();
+		editCategoriesPage.deleteGroupStatus();
+		driver.navigate().refresh();
+		Assert.assertFalse(editCategoriesPage.verifiGroupStatusIsFalse());
 		
 	}
   

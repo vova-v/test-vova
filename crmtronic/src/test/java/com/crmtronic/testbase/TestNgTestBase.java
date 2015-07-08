@@ -87,7 +87,7 @@ public class TestNgTestBase {
   
   @AfterMethod
   public void endMethod() throws InterruptedException {
-	  Thread.sleep(2000);
+	  Thread.sleep(4000);
 	  if(new IsElementPresent().isElementPresent(navigateMenu.menuUserName) != false ){
 		  navigateMenu.logout();
 		  Thread.sleep(1000);

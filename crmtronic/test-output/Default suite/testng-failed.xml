@@ -5,10 +5,10 @@
     <classes>
       <class name="com.crmtronic.tests.CategoriesTest">
         <methods>
-          <include name="testDeleteCategory"/>
           <include name="initTestSuite"/>
           <include name="endMethod"/>
           <include name="initPageObjects"/>
+          <include name="testAddGroupStatusCategory"/>
           <include name="startMethod"/>
           <include name="tearDown"/>
           <include name="initWebDriver"/>

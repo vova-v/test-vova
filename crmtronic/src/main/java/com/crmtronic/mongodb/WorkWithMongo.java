@@ -59,6 +59,30 @@ public class WorkWithMongo {
 		return rezult;
 	}
 	
+	public Object getSimplifiedCategory(){
+		Object rezult = null;
+		DBCollection listCategory = db.getCollection("categories");
+		BasicDBObject query = new BasicDBObject();
+		query.put("ownerId", getOwnerId());
+		query.put("simplified",true);
+		return listCategory.findOne(query).get("category");
+		/*
+		DBCursor categoryName = listCategory.find(query);
+		
+		while (categoryName.hasNext()) { 
+			DBObject object = categoryName.next();
+			if(object.get("name").toString().contains("AvtoTestCategories")){
+				BasicDBObject query2 = new BasicDBObject();
+				query.put("name", object.get("name"));
+				
+				rezult = listCategory.findOne(query).get("category");
+				break;
+			}
+         }
+		return rezult;
+		*/
+	}
+	
 	public Object getOwnerId(){
 		DBCollection listCategory = db.getCollection("users");
 		BasicDBObject query = new BasicDBObject();
