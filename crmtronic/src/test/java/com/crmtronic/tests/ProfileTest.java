@@ -14,6 +14,7 @@ public class ProfileTest extends TestNgTestBase{
 	@Test()
 	public void testEditAvatarProfileSelectLocal() throws InterruptedException {
 		loginPage.verifiLoginIn("staging@crmtronic.com", "123456789a");
+		System.out.println("!!!!" + new WorkWithMongo().getCategoryForDelete().toString());
 
 	}
 

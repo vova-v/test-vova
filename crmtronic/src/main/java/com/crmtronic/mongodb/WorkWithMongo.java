@@ -4,6 +4,8 @@ package com.crmtronic.mongodb;
 import java.awt.List;
 import java.util.Set;
 
+import org.bson.BSONObject;
+
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
@@ -26,6 +28,35 @@ public class WorkWithMongo {
 			
 		//}
 		return listCategory.findOne(query).get("name");
+	}
+	
+	public Object getCategory(){
+		DBCollection listCategory = db.getCollection("categories");
+		BasicDBObject query = new BasicDBObject();
+		query.put("ownerId", getOwnerId());
+		//for(DBObject test:listCategory.find(query)){
+			
+		//}
+		return listCategory.findOne(query).get("category");
+	}
+	
+	public Object getCategoryForDelete(){
+		Object rezult = null;
+		DBCollection listCategory = db.getCollection("categories");
+		BasicDBObject query = new BasicDBObject();
+		query.put("ownerId", getOwnerId());
+		DBCursor categoryName = listCategory.find(query);
+		while (categoryName.hasNext()) { 
+			DBObject object = categoryName.next();
+			if(object.get("name").toString().contains("AvtoTestCategories")){
+				BasicDBObject query2 = new BasicDBObject();
+				query.put("name", object.get("name"));
+				
+				rezult = listCategory.findOne(query).get("category");
+				break;
+			}
+         }
+		return rezult;
 	}
 	
 	public Object getOwnerId(){

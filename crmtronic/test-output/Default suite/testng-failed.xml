@@ -5,7 +5,7 @@
     <classes>
       <class name="com.crmtronic.tests.CategoriesTest">
         <methods>
-          <include name="testCreateNewCategories"/>
+          <include name="testDeleteCategory"/>
           <include name="initTestSuite"/>
           <include name="endMethod"/>
           <include name="initPageObjects"/>

@@ -1,6 +1,11 @@
 package com.crmtronic.pages;
 
+import java.util.List;
+
 import org.apache.xml.dtm.ref.ExpandedNameTable;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -34,6 +39,7 @@ public class NavigateMenu extends LoginPage{
 	
 	
 	
+	
 	public NavigateMenu clickMenuSettings(){
 		wait.until(ExpectedConditions
 				.visibilityOf(menuSettings)).click();
@@ -61,6 +67,12 @@ public class NavigateMenu extends LoginPage{
 				.visibilityOf(menuUserName))).click().perform();
 		action.moveToElement(wait.until(ExpectedConditions
 				.visibilityOf(menuSingOut))).click().perform();
+	}
+	
+	public Boolean verifiCategoriesMenu(String category){
+		clickMenuDealings();
+		return new IsElementPresent().isElementPresent(driver, By
+				.xpath("//a[@class = 'check-for-changes'][@href = '/objects/by-category/"+category+"']"));
 	}
 
 
