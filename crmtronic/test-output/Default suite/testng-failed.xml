@@ -6,7 +6,6 @@
       <class name="com.crmtronic.tests.CategoriesTest">
         <methods>
           <include name="initTestSuite"/>
-          <include name="endMethod"/>
           <include name="initPageObjects"/>
           <include name="testAddGroupStatusCategory"/>
           <include name="startMethod"/>
