@@ -119,7 +119,7 @@
     <profile>
       <id>localhost</id>
       <properties>
-        <site.url>http://staging.turbizup.ru/</site.url>
+        <site.url>site.url>
       </properties>
       <activation>
         <activeByDefault>true</activeByDefault>
